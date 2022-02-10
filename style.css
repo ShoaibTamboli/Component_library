@@ -1,11 +1,135 @@
 @import url('/components/Alert/alert.css');
+@import url('/components/intro.css');
+@import url('/components/Badge/badge.css');
+@import url('/components/Avatar/avatar.css');
 *{
-    font-size: 62.5%; /* 100/16*100 */
-    padding: 0;
+    /*font-size: 62.5%; /* 100/16*100 */
     margin: 0;
+    padding: 0;
+    
 }
 
 :root{
     --primary-color: #CBC8FD;
-    --secondary-color: #3D3C43;
+    --secondary-color: #39393b;
+    --primary-hover: #d5d3f3;
+    --secondary-hover: #4f4f52;
+}
+
+main{
+    max-width: 700px;
+    margin: auto;
+    padding: 60px 0px 0px 0px;
+    text-align: center;
+}
+
+main .heading{
+    color : #202020;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: auto;
+    text-align: center;
+    width: 80%;    
+}
+
+main .description{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin: auto;
+    padding: 1rem 0 2rem;
+    text-align: center;
+    width: 90%;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 300px;
+}
+
+.btn{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow:3px 1px 11px 9px rgba(167, 25, 49, 0.199);
+    color: whitesmoke;
+    min-width: 100px;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-primary{
+    background-color : var(--primary-color);
+    color : var(--secondary-color)
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-hover)
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
+}
+
+.btn-secondary:hover{
+    background-color: var(--secondary-hover)
+}
+
+
+/* CSS for Nav bar*/
+
+.container{
+    width: 80%;
+    /* min-height: 100vh;
+    height: max-content; */
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 1rem;
+}
+
+.left-navhead{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.left-navhead a{
+    color : black;
+    text-decoration: none;
+}
+
+.left-navhead a:hover{
+    color: rgb(150, 137, 137);
+}
+
+.version-text{
+    color :rgb(63, 61, 61);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.right-navhead li{
+    list-style: none;
+    margin: 0 1rem;
+}
+ 
+.right-navhead a{
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1rem;
+    text-decoration: none;
+    /* transition: all .3s ease; */
+}
+
+.right-navhead a:hover{
+    color: rgb(117, 114, 114);
 }

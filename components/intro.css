@@ -1,0 +1,80 @@
+.side-menu{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    /* flex: 0 0 240px; */
+    margin-right: 1rem;
+    
+}
+
+.list-topic{
+    border-bottom: 1px solid #7a79799c;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    padding: 1rem;
+}
+
+.list-topic a{
+    color: #000;
+    font-weight: 600 ;
+    font-size: 1rem;
+    text-decoration: none; 
+}
+
+.list-subtopic .active{
+    color : rgb(117, 114, 115);
+    font-weight: 500;
+}
+
+.list-subtopic li{
+    font-weight: 400;
+    font-size: 14px;
+    list-style: none;
+    padding: .7rem 1.1rem;
+    /* transition: all .3s ease-in-out; */
+}
+
+.list-subtopic li a:hover{
+    color : gold;
+    cursor: pointer;
+}
+
+.list-subtopic a{
+    align-items: center;
+    color : #444444;
+    display: flex;
+    text-decoration: none;
+    /* transition: all .3s ease-in-out; */
+}
+
+.intro-container{
+    /* font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+    width: 100%;
+    margin: 50px auto 0;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.doc-content{
+    min-width: 0;
+    margin: 0px auto;
+    max-width: 800px;
+    flex:1 1 0%;
+}
+
+.content-title{
+    font-family: 'Nunito Sans', sans-serif;
+    color : #333333;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.content-subtitle{
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 27px;
+    color : #333333;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
