@@ -1,31 +1,31 @@
-.side-menu{
+.side-menu {
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     /* flex: 0 0 240px; */
     margin-right: 1rem;
-    
+
 }
 
-.list-topic{
+.list-topic {
     border-bottom: 1px solid #7a79799c;
     font-weight: 500;
     margin-bottom: .5rem;
     padding: 1rem;
 }
 
-.list-topic a{
+.list-topic a {
     color: #000;
-    font-weight: 600 ;
+    font-weight: 600;
     font-size: 1rem;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.list-subtopic .active{
-    color : rgb(117, 114, 115);
+.list-subtopic .active {
+    color: rgb(117, 114, 115);
     font-weight: 500;
 }
 
-.list-subtopic li{
+.list-subtopic li {
     font-weight: 400;
     font-size: 14px;
     list-style: none;
@@ -33,20 +33,20 @@
     /* transition: all .3s ease-in-out; */
 }
 
-.list-subtopic li a:hover{
-    color : gold;
+.list-subtopic li a:hover {
+    color: gold;
     cursor: pointer;
 }
 
-.list-subtopic a{
+.list-subtopic a {
     align-items: center;
-    color : #444444;
+    color: #444444;
     display: flex;
     text-decoration: none;
     /* transition: all .3s ease-in-out; */
 }
 
-.intro-container{
+.intro-container {
     /* font-family: 'Nunito Sans', sans-serif;
     font-family: 'Roboto', sans-serif; */
     width: 100%;
@@ -55,26 +55,77 @@
     padding: 0 1rem;
 }
 
-.doc-content{
+.doc-content {
     min-width: 0;
     margin: 0px auto;
     max-width: 800px;
-    flex:1 1 0%;
+    flex: 1 1 0%;
 }
 
-.content-title{
+.content-title {
     font-family: 'Nunito Sans', sans-serif;
-    color : #333333;
+    color: #333333;
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 1rem;
 }
 
-.content-subtitle{
+.content-subtitle {
     font-family: 'Nunito Sans', sans-serif;
     line-height: 27px;
-    color : #333333;
+    color: #333333;
     margin-bottom: 2rem;
     font-size: 1rem;
     font-weight: 400;
+}
+
+.content-subtitle a {
+    color: var(--primary-color);
+    /* transition: all .3s ease-in-out; */
+}
+
+.content-subtitle a:hover {
+    /* font-weight: 400; */
+    color: var(--primary-hover);
+}
+
+.content-head {
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(106, 107, 106);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.example-div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 4px;
+    background-color: #F5F7F9;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.highlighted {
+    color: purple;
+    font-weight: 600;
+}
+
+.divider {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 1px;
+    background-color: #dadadaf3;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    font-weight: 600;
 }
