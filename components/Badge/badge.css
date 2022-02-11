@@ -24,7 +24,7 @@
 }
 
 .badge .dnd{
-    background-color: var(--danger-hover)
+    background-color: var(--danger-hover);
 }
 
 .badge .number{
