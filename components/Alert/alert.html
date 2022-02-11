@@ -1,12 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alert</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Mark-UI : Alert</title>
 </head>
+
 <body>
     this is alert page
+    <div class="container">
+        <nav>
+            <div class="left-navhead">
+                <a href="/index.html">Mark</a>
+                <span class="small-text">v1.1</span>
+            </div>
+            <ul class="right-navhead">
+                <li><a class="active" href="#">Docs</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro-container">
+            <div class="side-menu">
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/Get Started/introduction.html">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a class="active" href="/components/intro.html">
+                                Introduction
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="/Get Started/Typography.html">
+                                Typography
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/components/Alert/alert.html">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/Alert/alert.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Image Comp/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Alert
+                </div>
+                <div class="content-subtitle">
+                   Alert provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Simple Alert -->
+                <div class="content-head">
+                    Simple Alert 
+                </div>
+
+                <div class="content-subtitle">
+                    Simple Alerts can be created using <code>alert</code> class.
+                </div>
+
+                <!-- Live Code -->
+                <div class="example-div alert-box">
+                    <div class="alert primary">
+                        <strong>Primary!</strong> This is a Primary Alert!
+                    </div>
+
+                    <div class="alert success">
+                        <strong>Success!</strong> This is a Success Alert!
+                    </div>
+
+                    <div class="alert warning">
+                        <strong>Warning!</strong> This is a Warning Alert!
+                    </div>
+
+                    <div class="alert error">
+                        <strong>Error!</strong> This is an Error Alert!
+                    </div>
+
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="htmlcode">
+                    <-- Using the alert class followed by the variant name -->
+
+                    &lt;div class="alert primary"&gt;
+                        &lt;strong&gt;Primary!&lt;/strong&gt; This is a Primary Alert!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert success"&gt;
+                        &lt;strong&gt;Success!&lt;/strong&gt; This is a Success Alert!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert warning"&gt;
+                        &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert error"&gt;
+                    &lt;strong&gt;Error!&lt;/strong&gt; This is an Error Alert!
+                &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- OUTLINE ALERT
+                <div class="content-head">
+                    Outline Alert
+                </div>
+
+                <div class="content-subtitle">
+                    Outline alerts are created by using <code>alert</code> class, followed by <code>outline-variant</code>.
+                </div>
+
+                <div class="example-div alert-box">
+                    <div class="alert outline-primary">
+                        <strong>Primary!</strong> This is a Primary Alert - Check it now!
+                    </div>
+
+                    <div class="alert outline-error">
+                        <strong>Error!</strong> This is an Error Alert - Check it now!
+                    </div>
+
+                    <div class="alert outline-success">
+                        <strong>Success!</strong> This is a Success Alert - Check it now!
+                    </div>
+
+                    <div class="alert outline-warning">
+                        <strong>Warning!</strong> This is a Warning Alert - Check it now!
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                    <-- Using the alert class, followed by the outline-(variant) 
+
+                    &lt;div class="alert outline-primary"&gt;
+                        &lt;strong&gt;Primary!&lt;/strong&gt; This is a Primary Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert outline-error"&gt;
+                        &lt;strong&gt;Error!&lt;/strong&gt; This is an Error Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert outline-success"&gt;
+                        &lt;strong&gt;Success!&lt;/strong&gt; This is a Success Alert - Check it now!
+                    &lt;/div&gt;
+
+                    &lt;div class="alert outline-warning"&gt;
+                        &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert - Check it now!
+                    &lt;/div&gt;
+                        </code></pre>
+                </div> -->
+
+                <div class="divider"></div>
+
+
+                <footer>
+                    <div class="prev-comp">
+
+                        <a href="/components/intro.html">Get Started</a>
+                    </div>
+                    <div class="next-comp">
+                        <a href="../Alert/alert.html">Alert</a>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
+
 </html>

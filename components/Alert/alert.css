@@ -1,0 +1,27 @@
+
+.alert{
+    width: 60%;
+    color:white;
+    border-radius: 4px;
+    background-color: red ;
+    padding: 1rem 1.5rem;
+    opacity: .9;
+    margin: .5rem 0;
+    font-size: .8rem;
+}
+
+.primary{
+    background-color: blue ;
+}
+
+.error{
+    background-color: lightcoral;
+}
+
+.success{
+    background-color: green;
+}
+
+.warning{
+    background-color: orange;
+}
