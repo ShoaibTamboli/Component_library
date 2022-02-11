@@ -12,19 +12,19 @@
     width: 12px;
     border-radius: 50%;
     border: 2px solid white;
-    background-color: red
+    background-color: var(--danger-hover);
 }
 
 .badge .online{
-    background-color: goldenrod;
+    background-color: var(--success);
 }
 
 .badge .offline{
-    background-color: hotpink;
+    background-color: var(--grey);
 }
 
 .badge .dnd{
-    background-color: greenyellow;
+    background-color: var(--danger-hover);
 }
 
 .badge .number{
