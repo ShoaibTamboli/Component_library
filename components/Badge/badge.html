@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Mark-UI : Badge</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="left-navhead">
+                <a href="/index.html">Mark</a>
+                <span class="small-text">v1.1</span>
+            </div>
+            <ul class="right-navhead">
+                <li><a href="./intro.html">Docs</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro-container">
+            <div class="side-menu">
+
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/components/intro.html">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a class="active" href="/components/intro.html">
+                                Introduction
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="">
+                                Typography
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/components/Alert/alert.html">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/Avatar/avatar.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Image Comp/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Badge
+                </div>
+                <div class="content-subtitle">
+                    Badges are simple and basic components that are used to display an indicator or count a number. This
+                    is quite useful for mail count and alerting purposes, among other things.
+                    Usually positioned either at top-right or bottom-right of the parent component.
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Badge on profile avatar -->
+                <div class="content-head">
+                    Profile Badge
+                </div>
+
+                <div class="content-subtitle">
+                    Profile Badge is used to show the current status of a user.
+                    <div class="highlighted">It can be used with 3 variants : online | offline | dnd</div>
+                </div>
+
+                <div class="example-div">
+                    <div class="badge">
+                        <img class="avatar" src="/images/character-four.jpg" alt="avatar-2">
+
+                        <div class="online"></div>
+                    </div>
+
+                    <div class="badge">
+                        <img class="avatar" src="/images/character-five.jpg" alt="avatar-2">
+
+                        <div class="offline"></div>
+                    </div>
+
+                    <div class="badge">
+                        <img class="avatar" src="/images/character-six.jpg" alt="avatar-3">
+
+                        <div class="dnd"></div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="htmlcode">
+                    <-- Using the 'badge' class on parent and variant (i.e online,offline, dnd) class on child -->
+
+                    &lt;div class="badge" &gt;
+                        &lt;img class="avatar" src="/folder-name/image.jpg" alt="avatar-1"&gt;
+                        &lt;div class="online"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge" &gt;
+                        &lt;img class="avatar" src="/folder-name/image.jpg" alt="avatar-1"&gt;
+                        &lt;div class="offline"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge" &gt;
+                        &lt;img class="avatar" src="/folder-name/image.jpg"&gt;
+                        &lt;div class="dnd"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Number Badge -->
+                <div class="content-head">
+                    Number Badge
+                </div>
+
+                <div class="content-subtitle">
+                    Number Badge is quite useful for mail count and alerting purposes.
+                </div>
+
+                <div class="example-div">
+                    <div class="badge">
+                        <img class="avatar" src="/images/character-five.jpg" alt="avatar-2">
+
+                        <div class="number">99</div>
+                    </div>
+
+                    <div class="badge">
+                        <img class="avatar" src="/images/character-six.jpg" alt="avatar-2">
+
+                        <div class="number dnd">50</div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="htmlcode">
+                    <-- Using the 'badge' class on parent and 'number' class on child -->
+
+                    &lt;div class="badge" &gt;
+                        &lt;img class="avatar" src="/Image-folder/Image-.jpg" alt="avatar-1"&gt;
+                        &lt;div class="number"&gt;99&lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="badge" &gt;
+                        &lt;img class="avatar" src="/Image-folder/Image-.jpg" alt="avatar-2"&gt;
+                        &lt;div class="number dnd"&gt;50&lt;/div&gt;
+                    &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <footer>
+                    <div class="prev-comp">
+
+                        <a href="../Alert/alert.html">Alert</a>
+                    </div>
+                    <div class="next-comp">
+                        <a href="../Button/button.html">Button</a>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>
