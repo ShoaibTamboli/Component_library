@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Mark-UI : Input</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="left-navhead">
+                <a href="/index.html">Mark</a>
+                <span class="small-text">v1.1</span>
+            </div>
+            <ul class="right-navhead">
+                <li><a href="./intro.html">Docs</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro-container">
+            <div class="side-menu">
+
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/components/intro.html">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a class="active" href="/components/intro.html">
+                                Introduction
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="">
+                                Typography
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/components/Alert/alert.html">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/Avatar/avatar.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Image/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/List/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Inputs
+                </div>
+                <div class="content-subtitle">
+                    Inputs are used to take information from the user, and then save the data to the server.
+                </div>
+
+                <div class="divider"></div>
+
+
+                <!-- Label Input -->
+                <div class="content-head">
+                    Label Input
+                </div>
+
+                <div class="content-subtitle">
+                    Label Input has a label present at the top of the input field. They can be customized to show error
+                    error-message, and change color accordingly.
+                </div>
+
+                <div class="example-div alert-box">
+                    <!-- Input Field -->
+                    <div class="input-group">
+                        <label>Username *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-group err">
+                        <label>Password *</label>
+                        <input type="text">
+                        <div class="error-message">
+                            Wrong Password. Try again.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                <-- Using 'input-group' as outside container, containing label, input and error-
+                message -->
+                
+                &lt;div class="input-group">
+                    &lt;label>Username *&lt;/label>						
+                    &lt;input type="text">
+                &lt;/div>
+
+                &lt;div class="input-group err">
+                    &lt;label>Password *&lt;/label>						
+                    &lt;input type="text">
+                    &lt;div class="error-message">
+                        Wrong Password. Try again.
+                    &lt;/div>
+                &lt;/div>
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- CheckBox -->
+                <div class="content-head">
+                    Checkbox
+                </div>
+
+                <div class="content-subtitle">
+                    Checkboxes allow the user to select one or more items from a set.
+                    Checkboxes can be used to turn an option on or off.
+                </div>
+
+                <div class="example-div">
+                    <div class="checkbox">
+                        <label for="checkbox-1">
+                            <input id="checkbox-1" name="checkbox" type="checkbox" checked>
+                            Checked
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label for="checkbox-2">
+                            <input id="checkbox-2" name="checkbox" type="checkbox">
+                            Unchecked
+                        </label>
+                    </div>
+
+                    <div class="checkbox disabled">
+                        <label for="checkbox-3">
+                            <input id="checkbox-3" name="checkbox" type="checkbox" disabled>
+                            Disabled
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="example-code">
+                    <pre>
+        <code class="html">
+                    <-- Using 'checkbox' class for the outside div, containing input and label -->
+
+                    &lt;div class="checkbox">
+                    &lt;label for="checkbox-1">
+                    &lt;input id="checkbox-1"    name="checkbox" type="checkbox"    checked>
+                    Checked
+                    &lt;/label>
+                    &lt;/div>
+
+                    &lt;div class="checkbox">
+                    &lt;label for="checkbox-2">
+                    &lt;input id="checkbox-2" name="checkbox" type="checkbox">
+                    Unchecked   
+                    &lt;/label>
+                    &lt;/div>
+
+                    &lt;div class="checkbox disabled">
+                    &lt;labelfor="checkbox-3">
+                    &lt;input id="checkbox-3" name="checkbox" type="checkbox" disabled>
+                    Disabled
+                    &lt;/label>
+                    &lt;/div>
+                 </code></pre>
+            </div>
+
+                <div class="divider"></div>
+                <footer>
+                    <div class="prev-comp">
+
+                        <a href="/components/Image/image.html">Image</a>
+                    </div>
+                    <div class="next-comp">
+                        <a href="/components/List/list.html">List</a>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

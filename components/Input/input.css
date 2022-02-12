@@ -1,0 +1,65 @@
+.input-group {
+    font-size: .8rem;
+    line-height: 20px;
+    margin: 0 20px 10px;
+    width: 80%;
+}
+  
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+input[type=text] {
+    background: var(--white);
+    border: 1px solid #999;
+    padding:.6rem .7rem;
+    font-size: .8rem;
+    margin: 5px 0;
+    width: 100%;
+    transition: .3s all ease;
+    outline: none;
+    border-radius: 4px;
+}
+
+.input-group input:focus{
+    border : 1px solid var(--primary-color);
+}
+
+.input-group.err label{
+    color: var(--danger);
+}
+
+.input-group.err input{
+    border: 1px solid var(--danger);
+}
+
+.input-group.err input:focus{
+    border: 1px solid var(--danger-hover);
+}
+
+.error-message{
+    color: var(--danger);
+}
+
+/*Checkbox */
+
+.checkbox label{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.checkbox input{
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.checkbox.disabled label{
+    color:var(grey);
+}
+
+.checkbox.disabled input{
+    cursor: not-allowed;
+}
