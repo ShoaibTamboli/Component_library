@@ -160,5 +160,12 @@ opacity: 0.6;
 .horizontal-card div{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.horizontal-title{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
 }

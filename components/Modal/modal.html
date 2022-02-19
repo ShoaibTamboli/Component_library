@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/components/Modal/modal.css">
+    <title>Mark-UI : Modal</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="left-navhead">
+                <a href="/index.html">Mark</a>
+                <span class="small-text">v1.1</span>
+            </div>
+            <ul class="right-navhead">
+                <li><a class="active" href="#">Docs</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro-container">
+            <div class="side-menu">
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/Get Started/introduction.html">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/intro.html">
+                                Introduction
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="/Get Started/Typography.html">
+                                Typography
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/components/Alert/alert.html">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/Alert/alert.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Image/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active" href="#">
+                                Modal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="doc-content">
+                <div class="content-title">
+                    Modal
+                </div>
+                <div class="content-subtitle">
+                    Below is a static modal example. It contains modal header, modal body (required for padding), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Baisc Modal -->
+                <div class="content-head">
+                   Modal
+                </div>
+                <!-- Live Code -->
+                <div class="example-div">
+                    <div class="modal">
+                        <div class="modal-header">
+                            <h2>Modal Title</h2> 
+                            <span><i class="fa fa-times-circle modal-head-icon"></i>
+                            </span> 
+                        </div> <hr>
+                        <div class="modal-body">Modal body text goes here. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div><hr>
+                        <div class="modal-footer" >
+                            <button class="btn btn-secondary">Close</button>
+                            <button class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                         <code class="html">
+                          <-- Using 'modal' class name -->
+                        
+                         &lt;div class="modal">
+                            &lt;div class="modal-header"&gt;
+                            &lt;h2&gt;Modal Title &lt;/h2&gt
+                            &lt;span&gt;&lt;i class="fa fa-times-circle modal-head-icon"&gt;&lt;/i&gt;
+                            &lt;/div&gt; &lt;hr&gt;
+                            &lt;/span&gt;
+
+                            &lt;div class="modal-body"&gt;Modal body text goes here. Lorem ipsum dolor sit amet consectetur.&lt;/div&gt;&lt;hr&gt;
+                                
+                            &lt;div class="modal-footer" &gt;
+                            &lt;button class="btn btn-secondary"&gt;Close&lt;/button&gt;
+                             &lt;button class="btn btn-primary"&gt;Savechanges&lt;/button&gt
+                            &lt/div&gt
+                            &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+
+                <footer>
+                    <div class="prev-comp">
+
+                        <a href="/components/List/list.html">List</a>
+                    </div>
+                    <div class="next-comp">
+                        <a href="/components/Toast/toast.html">Toast</a>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>
