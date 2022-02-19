@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/components/Card/card.css">
+    <title>Mark-UI : Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="left-navhead">
+                <a href="/index.html">Mark</a>
+                <span class="small-text">v1.1</span>
+            </div>
+            <ul class="right-navhead">
+                <li><a class="active" href="#">Docs</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro-container">
+            <div class="side-menu">
+                <!-- Get Started List Start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/Get Started/introduction.html">
+                            Get Started
+                        </a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/intro.html">
+                                Introduction
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="/Get Started/Typography.html">
+                                Typography
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- Components List start -->
+                <div>
+                    <div class="list-topic">
+                        <a href="/components/Alert/alert.html">Components</a>
+                    </div>
+                    <ul class="list-subtopic">
+                        <li>
+                            <a href="/components/Alert/alert.html">
+                                Alert
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Avatar/avatar.html">
+                                Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Badge/badge.html">
+                                Badge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Button/button.html">
+                                Button
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active" href="/components/Card/card.html">
+                                Card
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Image/image.html">
+                                Image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Input/input.html">
+                                Input
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/list/list.html">
+                                List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/components/Toast/toast.html">
+                                Toast
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="doc-content">
+                <div class="content-title">
+                    Card
+                </div>
+                <div class="content-subtitle">
+                    A card is a flexible and extensible content container. It includes options for headers and footers,
+                    a wide variety of content, contextual background colors, and powerful display options.
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Cards with badges -->
+
+                <div class="content-head">
+                    Cards with badges
+                </div>
+
+                <div class="content-subtitle">
+                    Cards with badges is used to display the products details i.e., Product shot, Name, Type, Fixed
+                    badge, Price, Discount and stock.
+                    This can be used as a E-commerce card.
+                </div>
+
+                <div class="example-div">
+                    <div class="card ecomm">
+                        <div class="product-image">
+                            <img
+                                src="https://rukminim1.flixcart.com/image/800/960/jvfk58w0/shirt/y/n/c/44-8714063-mast-harbour-original-imafgbp8dak2zhmq.jpeg?q=50" />
+                        </div>
+                        <div class="card-badge">
+                            NEW
+                        </div>
+                        <button class="ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                            </svg>
+                        </button>
+                        <div class="card-title">
+                            Mast & Harbour
+                        </div>
+                        <div class="card-text">
+                            Men Slim Fit Printed Casual Shirt.
+                        </div>
+                        <div class="card-price">
+                            <span class="price-now">
+                                Rs.763
+                            </span>
+                            <span class="price-before">
+                                Rs.1499
+                            </span>
+                            <span class="discount">
+                                (49% OFF)
+                            </span>
+                        </div>
+                        <button class="btn btn-primary">ADD TO CART</button>
+                    </div>
+
+                </div>
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                <-- Using inside 'card ecomm' class -->
+                
+                &lt;div class="card ecomm"&gt;
+                    &lt;div class="product-image">
+                        &lt;img src="https://url-of-the-image" alt="card-pic" /&gt;
+                    &lt;/div>
+
+                    <-- Optional -->
+                    &lt;div class="card-badge"&gt;
+                        NEW
+                    &lt;/div>
+                    &lt;button class="ico">
+                        <-- svg of icon -->
+                    &lt;/button>
+
+                    &lt;div class="card-title"&gt;
+                    Mast & Harbour 
+                    &lt;/div&gt;
+                    &lt;div class="card-text"&gt;
+                    Men Slim Fit Printed Casual Shirt.
+                    &lt;/div&gt;
+                    &lt;div class="card-price"&gt;
+                        &lt;span class="price-now"&gt;
+                            Rs. 763
+                        &lt;/span&gt;
+                        &lt;span class="price-before"&gt;
+                            Rs. 1499
+                        &lt;/span&gt;
+                        &lt;span class="discount"&gt;
+                            (49% OFF)
+                        &lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;button class="btn btn-primary">
+                        ADD TO CART
+                    &lt;/button>
+
+                &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Card with dismiss -->
+
+                <div class="content-head">
+                    Card with Dismiss
+                </div>
+
+                <div class="content-subtitle">
+                    Cards with Dismiss provides user to discard the card as per users interest.
+                </div>
+                <div class="example-div">
+                    <div class="card ecomm">
+                        <div class="product-image">
+                            <img
+                                src="https://rukminim1.flixcart.com/image/800/960/jvfk58w0/shirt/y/n/c/44-8714063-mast-harbour-original-imafgbp8dak2zhmq.jpeg?q=50" />
+                        </div>
+                        <!-- <div class="card-badge">
+                            NEW
+                        </div> -->
+                        <button class="ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                <path
+                                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" />
+                            </svg>
+                        </button>
+                        <div class="card-title">
+                            Mast & Harbour
+                        </div>
+                        <div class="card-text">
+                            Men Slim Fit Printed Casual Shirt.
+                        </div>
+                        <div class="card-price">
+                            <span class="price-now">
+                                Rs.763
+                            </span>
+                            <span class="price-before">
+                                Rs.1499
+                            </span>
+                            <span class="discount">
+                                (49% OFF)
+                            </span>
+                        </div>
+                        <button class="btn btn-primary">ADD TO CART</button>
+                    </div>
+
+                </div>
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                <-- Using inside 'card ecomm' class -->
+                
+                &lt;div class="card ecomm"&gt;
+                    &lt;div class="product-image">
+                        &lt;img src="https://url-of-the-image" alt="card-pic" /&gt;
+                    &lt;/div>
+
+                    <-- Optional -->
+                    &lt;div class="card-badge"&gt;
+                        NEW
+                    &lt;/div>
+                    &lt;button class="ico">
+                        <-- svg of icon -->
+                    &lt;/button>
+
+                    &lt;div class="card-title"&gt;
+                    Mast & Harbour 
+                    &lt;/div&gt;
+                    &lt;div class="card-text"&gt;
+                    Men Slim Fit Printed Casual Shirt.
+                    &lt;/div&gt;
+                    &lt;div class="card-price"&gt;
+                        &lt;span class="price-now"&gt;
+                            Rs. 763
+                        &lt;/span&gt;
+                        &lt;span class="price-before"&gt;
+                            Rs. 1499
+                        &lt;/span&gt;
+                        &lt;span class="discount"&gt;
+                            (49% OFF)
+                        &lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;button class="btn btn-primary">
+                        ADD TO CART
+                    &lt;/button>
+
+                &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+                <!-- Cards with text overlay -->
+
+                <div class="content-head">Cards with text overlay</div>
+                <div class="content-subtitle">Cards with text overlay is ued to show the text over a Image. Mostly used
+                    in ecommerce cards to display items as "Out of stock" etc.</div>
+
+                <div class="example-div">
+                    <div class="card ecomm">
+                        <div class="product-image card-opacity">
+                            <img
+                                src="https://rukminim1.flixcart.com/image/800/960/jvfk58w0/shirt/y/n/c/44-8714063-mast-harbour-original-imafgbp8dak2zhmq.jpeg?q=50" />
+                        </div>
+                        <div class="card-overlay">
+                            Out of Stock
+                        </div>
+                        <div class="card-title">
+                            Mast & Harbour
+                        </div>
+                        <div class="card-text">
+                            Men Slim Fit Printed Casual Shirt.
+                        </div>
+                    </div>
+                </div>
+                <!-- Text only cards -->
+                <div class="content-head">
+                    Text only card
+                </div>
+
+                <div class="content-subtitle">
+                    Text only card is the one that contains a title, a descriptive text. It is also known as simple
+                    card.
+                    To implement use the Card Component, card-title, and card-text inside a div with class card.
+                </div>
+
+                <div class="example-div">
+                    <div class="card">
+                        <div class="card-title">
+                            Mark-UI
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, sapiente? Sit porro iure
+                            deleniti libero fuga? Ad, dolores. Atque non rem eos?
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                <-- Using card-title, card-text inside 'card' class -->
+                
+                &lt;div class="card"&gt;
+                    &lt;div class="card-title"&gt;
+                    Mark-UI
+                    &lt;/div&gt;
+                    &lt;div class="card-text"&gt;
+                        Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Beatae ut modi et placeat.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Vertical Card -->
+                <div class="content-head">
+                    Vertical Card
+                </div>
+
+                <div class="content-subtitle">
+                    Vertical Card is the one that contains an <span class="highlighted">Image, Title & Text one below
+                        another</span>.
+                    To use the Card Component, put card-image, card-title and card-text, inside a div with class card.
+                </div>
+
+                <div class="example-div">
+                    <div class="card">
+                        <img class="card-image"
+                            src="https://rukminim1.flixcart.com/image/800/960/k8t3jbk0/shirt/h/a/n/39-shkc-top110-l-pu-fubar-original-imafqqznyyu3vuu5.jpeg?q=50"
+                            alt="card-pic" />
+                        <div class="card-title">
+                            Mark-UI
+                        </div>
+                        <div class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                <-- Using card-image, card-title, card-text inside 'card' class -->
+                        
+                &lt;div class="card"&gt;
+                    &lt;img class="card-image" src="https://url-of-the-image" alt="card-pic" /&gt;
+                    &lt;div class="card-title"&gt;
+                        Batman
+                    &lt;/div&gt;
+                    &lt;div class="card-text"&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ea dolorum laboriosam error quia? Accusantium, saepe.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Horizontal card -->
+                <div class="content-head">
+                    Horizontal Card
+                </div>
+
+                <div class="content-subtitle">
+                    Horizontal Card is the one that contains Image, Description in horizontal way.
+                </div>
+
+                <div class="example-div horizontal-card">
+                    <div class="card">
+
+                        <img class="card-image"
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10945126/2020/1/31/6f938098-0bbd-4f94-8de9-14e18e35126b1580454366416-Roadster-Men-Shirts-2491580454364351-1.jpg"
+                            alt="card-pic" />
+                        <div class="card-head">
+                            Roadster Shirt
+                        </div>
+                        <div class="card-text">
+                            Men Navy Blue & Black Regular Fit Checked Casual Sustainable Shirt.
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                <-- Using horizontal-card class -->
+                
+                &lt;div class="example-div horizontal-card"&gt;
+                    &lt;div class="card"&gt;
+                    &lt;img class="card-image" src="https://url-of-the-image" alt="card-pic" /&gt;
+                    &lt;div class="card-head"&gt; Roadster Shirt  &lt;/div&gt;
+                    &lt;div class="card-text"&gt;
+                    Men Navy Blue & Black Regular Fit Checked Casual Sustainable Shirt.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+
+                <!--Cards with shadow -->
+                <div class="content-head">
+                    Card with shadow
+                </div>
+
+                <div class="content-subtitle">
+                    A card which has shadow effect.
+                </div>
+
+                <div class="example-div">
+                    <div class="card card-shadow">
+                        <div class="product-image">
+                            <img src="https://rukminim1.flixcart.com/image/800/960/jvfk58w0/shirt/y/n/c/44-8714063-mast-harbour-original-imafgbp8dak2zhmq.jpeg?q=50"
+                                alt="card-pic" />
+                        </div>
+                        <div class="card-badge">
+                            NEW
+                        </div>
+                        <div class="card-title">
+                            Mast & Harbour
+                        </div>
+                        <div class="card-text">
+                            Men Slim Fit Printed Casual Shirt.
+                        </div>
+                        <div class="card-price">
+                            <span class="price-now">
+                                Rs.763
+                            </span>
+                            <span class="price-before">
+                                Rs.1499
+                            </span>
+                            <span class="discount">
+                                (49% OFF)
+                            </span>
+                        </div>
+                        <button class="btn btn-primary">ADD TO CART</button>
+
+                    </div>
+
+                </div>
+
+                <div class="example-code">
+                    <pre>
+                        <code class="html">
+                            <-- Using inside 'card ecomm' class -->
+                
+                            &lt;div class="card ecomm"&gt;
+                                &lt;div class="product-image">
+                                    &lt;img src="https://url-of-the-image" alt="card-pic" /&gt;
+                                &lt;/div>
+            
+                                <-- Optional -->
+                                &lt;div class="card-badge"&gt;
+                                    NEW
+                                &lt;/div>
+                                &lt;button class="ico">
+                                    <-- svg of icon -->
+                                &lt;/button>
+            
+                                &lt;div class="card-title"&gt;
+                                Mast & Harbour 
+                                &lt;/div&gt;
+                                &lt;div class="card-text"&gt;
+                                Men Slim Fit Printed Casual Shirt.
+                                &lt;/div&gt;
+                                &lt;div class="card-price"&gt;
+                                    &lt;span class="price-now"&gt;
+                                        Rs. 763
+                                    &lt;/span&gt;
+                                    &lt;span class="price-before"&gt;
+                                        Rs. 1499
+                                    &lt;/span&gt;
+                                    &lt;span class="discount"&gt;
+                                        (49% OFF)
+                                    &lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;button class="btn btn-primary">
+                                    ADD TO CART
+                                &lt;/button>
+            
+                            &lt;/div&gt;
+                        </code></pre>
+                </div>
+
+                <div class="divider"></div>
+
+                <footer>
+                    <div class="prev-comp">
+                        <a href="/components/Button/button.html">Button</a>
+                    </div>
+                    <div class="next-comp">
+                        <a href="/components/Image/image.html">Image</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
