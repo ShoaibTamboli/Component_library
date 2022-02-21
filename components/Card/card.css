@@ -5,7 +5,7 @@
     width: 300px;
     background-color: white;
     border-radius: 2px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(61, 61, 107, 0.25) 0px 2px 5px -1px, rgba(14, 14, 14, 0.3) 0px 1px 3px -1px;
 }
 
 .card-head {
@@ -151,7 +151,7 @@ opacity: 0.6;
 
 
 .card-shadow{
-    box-shadow: 11px 5px 11px grey;
+    box-shadow: 11px 5px 11px var(--grey);
     width: 230px;
     cursor: pointer;
     transition: all .2s ease-in-out;
