@@ -2,7 +2,7 @@
 .btn{
     font-weight: 600;
     background: var(--primary-color);
-    color: white;
+    color: var(--white);
     min-width: 100px;
     width: max-content;
     padding: .8rem 1rem;
@@ -16,7 +16,7 @@
 
 .btn-primary{
     background-color : var(--primary-color);
-    color : white;
+    color : var(--white);
 }
 
 .btn-primary:hover{

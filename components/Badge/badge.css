@@ -11,7 +11,7 @@
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     background-color: var(--danger-hover);
 }
 
@@ -35,7 +35,7 @@
     right: 8px;
     position: absolute;
     font-size: .5rem;
-    color: white;
+    color: var(--white);
     font-weight: 900;
     height: 18px;
     width: 18px;
